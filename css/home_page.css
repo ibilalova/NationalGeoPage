@@ -142,17 +142,23 @@ nav {
 
 nav .item {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 12.5%;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
 }
 
-nav .item span {
+nav .item_icon {
+    display: flex;
+    align-self: stretch;
+    margin-bottom: 10px;
+}
+
+.item_icon span {
     color: #777;
     margin: 0px 5px;
 }
 
-nav .item .yellow {
+nav .yellow {
     color: #fdcc05;
 }
 
@@ -163,11 +169,10 @@ nav .item .yellow {
     flex-direction: column;
 }*/
 
-
-/*nav div div p {
+nav .item label {
     font-family: MyriadPro-Semibold;
     font-size: 16px;
-}*/
+}
 
 .nav_dash {
     background: #777;
