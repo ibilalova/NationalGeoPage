@@ -1,0 +1,112 @@
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url("../res/fonts/MyriadPro-Regular.otf");
+}
+
+body {
+    background: #fbfbfb;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 31px 34px;
+}
+
+
+/*Логотип*/
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 150px;
+}
+
+
+/*Поиск*/
+
+.wrapper {
+    position: relative;
+    margin-right: 25px;
+}
+
+.wrapper input[type="text"] {
+    position: relative;
+}
+
+.wrapper input {
+    font-family: 'FontAwesome';
+    width: 420px;
+    padding: 16px 10px;
+    border: 1px solid #ededed;
+}
+
+.wrapper input::-webkit-input-placeholder {
+    color: #ededed;
+    font-size: 15px;
+}
+
+.wrapper span {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    font-size: 25px;
+    color: #ededed;
+}
+
+
+/*Авторизация*/
+
+.sign_up_wrapper {
+    background: #fff;
+    border: 1px solid #ededed;
+}
+
+span.sign_up_span {
+    color: #999;
+    font-size: 18px;
+}
+
+p.sign_up_p {
+    font-family: MyriadPro-Regular;
+    font-size: 15px;
+    color: #999;
+}
+
+.sign_up {
+    border-right-width: 0px;
+    padding: 6px 20px 2px 30px;
+}
+
+.sign_up p {
+    margin: 0px;
+    margin-left: -18px;
+}
+
+.dash {
+    background: #eaeaea;
+    width: 1px;
+    height: 25px;
+    margin: 12px 0px;
+}
+
+.login {
+    border-left-width: 0px;
+    padding-top: 5px;
+    padding-right: 23px;
+}
+
+.login span {
+    margin-left: 27px;
+}
+
+.login p {
+    margin: 0px;
+    margin-left: 16px;
+}
