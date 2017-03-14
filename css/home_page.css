@@ -3,16 +3,30 @@
     src: url("../res/fonts/MyriadPro-Regular.otf");
 }
 
+@font-face {
+    font-family: MyriadPro-Semibold;
+    src: url("../res/fonts/MyriadPro-Semibold.otf");
+}
+
 body {
     background: #fbfbfb;
 }
 
-.flex_container {
+.page {
+    min-height: 100%;
+    margin: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 31px 34px;
+    flex-direction: column;
+    padding: 32px;
+    padding-bottom: 0px;
+}
+
+header {
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 
@@ -25,37 +39,38 @@ body {
 
 .logo {
     width: 160px;
-    margin-right: 150px;
+    margin-right: 16%;
 }
 
 
 /*Поиск*/
 
-.wrapper {
+.search_wrapper {
     position: relative;
     margin-right: 25px;
+    flex-grow: 1;
 }
 
-.wrapper input[type="text"] {
+.search_wrapper input[type="text"] {
     position: relative;
 }
 
-.wrapper input {
+.search_wrapper input {
     font-family: 'FontAwesome';
     width: 420px;
     padding: 16px 10px;
     border: 1px solid #ededed;
 }
 
-.wrapper input::-webkit-input-placeholder {
+.search_wrapper input::-webkit-input-placeholder {
     color: #ededed;
     font-size: 15px;
 }
 
-.wrapper span {
+.search_wrapper span {
     position: absolute;
     top: 11px;
-    right: 11px;
+    right: 15px;
     font-size: 25px;
     color: #ededed;
 }
@@ -66,6 +81,10 @@ body {
 .sign_up_wrapper {
     background: #fff;
     border: 1px solid #ededed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 45px;
 }
 
 span.sign_up_span {
@@ -109,4 +128,58 @@ p.sign_up_p {
 .login p {
     margin: 0px;
     margin-left: 16px;
+}
+
+
+/*Меню*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav .item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 12.5%;
+}
+
+nav .item span {
+    color: #777;
+    margin: 0px 5px;
+}
+
+nav .item .yellow {
+    color: #fdcc05;
+}
+
+
+/*.home_column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}*/
+
+
+/*nav div div p {
+    font-family: MyriadPro-Semibold;
+    font-size: 16px;
+}*/
+
+.nav_dash {
+    background: #777;
+    height: 5px;
+    flex-grow: 1;
+    align-self: center;
+}
+
+footer {
+    flex: 0 0 100px;
+}
+
+.main {
+    flex: 1 0 auto;
 }
