@@ -212,8 +212,9 @@ footer {
     align-items: center;
     justify-content: space-around;
     background: #fff;
+    flex: 1;
+    min-width: 75px;
     height: 68px;
-    flex: 0 0 77px;
     margin-bottom: 5px;
     margin-right: 5px;
     border: 1px solid #ededed;
@@ -227,6 +228,7 @@ footer {
 
 .submenu_item span {
     color: #555;
+    font-size: 26px;
 }
 
 .main_slider {
