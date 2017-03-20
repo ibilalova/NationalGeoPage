@@ -188,12 +188,14 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 100%;
 }
 
 .left {
     flex: 3;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .main {
@@ -201,6 +203,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100%;
 }
 
 .submenu {
@@ -209,6 +212,7 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .submenu_item {
@@ -250,13 +254,18 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     padding: 0 3%;
 }
+
+
+/*Main filter*/
 
 .filter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100%;
 }
 
 .filter div {
@@ -276,6 +285,19 @@ footer {
 .filter div:first-of-type {
     background: #555;
     color: #fff;
+}
+
+
+/*Slider*/
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+    flex: 1;
+    width: 100%;
 }
 
 .reports {
