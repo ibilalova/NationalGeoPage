@@ -290,14 +290,66 @@ footer {
 
 /*Slider*/
 
-.slider img {
-    width: 100%;
-    height: auto;
-}
-
 .slider {
     flex: 1;
     width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.slider_caption {
+    position: absolute;
+    background: #fff;
+    margin: -50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 48.6%;
+}
+
+.slider_caption_text {
+    flex: 10;
+    padding: 5px;
+    padding-left: 3%;
+    border: 1px solid #ededed;
+}
+
+.slider_caption_text h4 {
+    margin: auto;
+    font-family: MyriadPro-Semibold;
+}
+
+.slider_caption_text p {
+    margin: auto;
+    font-family: MyriadPro-Regular;
+    font-size: 12px;
+}
+
+.slider_caption_pause {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ededed;
+    border-left: none;
+}
+
+.pause {
+    display: flex;
+    justify-content: center;
+    height: 35%;
+    margin: 15px 10px;
+}
+
+.pause div {
+    background: #555;
+    width: 13%;
+}
+
+.pause .white {
+    background: #fff;
 }
 
 .reports {
